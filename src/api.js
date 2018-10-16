@@ -51,23 +51,20 @@ function checkMax(){
 }
 // prev Hero
 function prevHero(){
-  heroCount--;
-  console.log(heroCount);
+  heroCount--;  
   checkMax();
   updateHero();
 }
 // next Hero
 function nextHero(){
-  heroCount++;
-  console.log(heroCount);
+  heroCount++;  
   checkMax();
   updateHero();
 }
 // check Gender output
 
 function checkGender(){
-  if(displayGenderData === "n/a"){
-    console.log("test")
+  if(displayGenderData === "n/a"){   
     displayGenderIcon.className = "fas fas-robot";
   }
 }
@@ -76,7 +73,7 @@ function checkGender(){
 fetch('https://swapi.co/api/people/' + 1)
 .then(function(res){
   if(res.status === 200 ){
-    console.log(res.status)
+//     console.log(res.status)
     return res.json();
 
 
@@ -127,7 +124,7 @@ function updateHero(){
 
 // -----------------------------
   if(genderValClean === "n/a"){
-    console.log(genderValClean)
+   
   displayGenderIcon.className = "fas fa-transgender-alt ico-custom-color ico-size";
 }else if(genderValClean === "male"){
   displayGenderIcon.className = "fas fa-transgender-alt ico-custom-color ico-size";
