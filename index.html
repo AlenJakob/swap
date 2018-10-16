@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Swapi app</title>
+</head>
+<body>
+
+<div class="card">
+
+
+  <ul id="list">
+<span class="m-bt show-name bg-data"></span>
+  <li class="name-item">
+
+    <span class="hero-img">
+      <img class="show-img" src="https://vignette.wikia.nocookie.net/starwars/images/9/9e/Luke_Skywalker_TLJ.png/revision/latest?cb=20180110030236" alt="">
+
+    </span>
+  <div class="group-data">
+<!-- <label for="show-name" class="label-color">Hero</label> -->
+<!-- <span class="m-bt show-name bg-data"></span> -->
+
+  <span class="gender-data--group m-bt bg-data" id="gender-data">
+
+    <i id="display-gender-data"></i>
+    <i id="display-gender-icon" class="fas fa-mars ico-size"></i>
+  </span>
+
+
+<span class="m-bt bg-data  eye-color" id="eye-data--group">
+<i id="display-eye-data"></i>
+  <i id="eye-color" class="fas fa-eye ico-size ico-custom-color"></i>
+</span>
+<span class="m-bt bg-data dispaly-data">
+<i id="display-year-data">as</i>
+<i class="fas fa-calendar-alt ico-size ico-color-b ico-custom-color" ></i>
+
+</span>
+
+<span class="m-bt bg-data dispaly-data" >
+  <i id="display-mass-data"></i>
+<i class="fas fa-weight ico-size ico-color-b ico-custom-color"></i>
+
+</span>
+
+</div>
+
+<div class="buttons">
+<button class="prev">prev</button>
+  <button class="next">next</button>
+</div>
+  </li>
+
+  </ul>
+
+
+</div>
+
+  <script src="api.js"></script>
+</body>
+</html>
