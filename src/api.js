@@ -70,7 +70,7 @@ function checkGender(){
 }
 
 (function display(){
-fetch('https://swapi.co/api/people/' + 1)
+fetch('https://swapi.dev/api/people/' + 1)
 .then(function(res){
   if(res.status === 200 ){
 //     console.log(res.status)
@@ -92,7 +92,7 @@ fetch('https://swapi.co/api/people/' + 1)
 
 
 function updateHero(){
-    fetch('https://swapi.co/api/people/' + heroCount)
+    fetch('https://swapi.dev/api/people/' + heroCount)
   .then(function(res){
  return res.json();
 })
@@ -170,15 +170,6 @@ switch (heroCount){
 
 
 }
-
-// heroR2 ` 3
-// heroVader  ` 4
-// heroOwen  ` 5
-// heroLeia ` 6
-// heroBeru ` 7
-// heroR5   ` 8
-// heroBiggs ` 9
-// heroObi ` 10
 
 
 })
